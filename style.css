@@ -305,7 +305,7 @@ img
     }
 
     /*Specialní - vypíše "Tato stránka není určena pro tisk"*/
-    .container::before
+    .special-container::before
     {
 
         content: "Tato stránka není určena pro tisk";
