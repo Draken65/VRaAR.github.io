@@ -305,6 +305,7 @@ img
     }
 
     /*Specialní - vypíše "Tato stránka není určena pro tisk"*/
+   /*
     .container::before
     {
 
@@ -318,7 +319,7 @@ img
         font-size: larger;
     }
 }
-
+*/
 
 
 
