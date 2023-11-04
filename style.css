@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+p
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 50px;
+    font-size: larger;
+    word-break: break-word;
+    text-align: justify;    /*zarovnani do bloku*/
+}
+
+body
+{
+    background-color: rgb(38, 37, 39);
+    color: white;
+    padding-top: 56px;
+
+}
+.navbar
+{
+    background-image: linear-gradient(55deg, black, darkslateblue);
+}
+
+.mainpage-pic {
+    background-image: url("images for web/5e469a5f90b1c614158410-edited.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid dimgray;
+
+}
+.vrpage-pic {
+    background-image: url("images for web/home picture.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid dimgray;
+
+}
+.arpage-pic {
+    background-image: url("images for web/VR background image.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid dimgray;
+
+}
+.vyuzitipage-pic {
+    position: relative;
+    min-height: 50vh;
+    border-bottom: 1px solid dimgray;
+    text-align: center; /* Zarovnání obsahu na střed */
+
+    /* Přidejte styl pro video */
+    background-color: black; /* Černé pozadí pro video, pokud by nebylo načtené */
+}
+
+.vyuzitipage-pic video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* video zaplní celý prostor */
+}
+
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/*TEXT S OBRAZKY/ODSAZENI TEXTU OD KRAJE STRANKY*/
+.pic-with-text
+{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+img
+{
+    max-width: 320px;
+    float: left;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.text-box h2
+{
+    font-size: 35px;
+
+}
+.text-box p
+{
+    font-size: larger;
+}
+/*KONEC KODU NA TEXT*/
+
+
+/*BUTTON*/
+.center-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.center-text a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.center-text button {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+/*Odsazeni textu, který neni vedle obrazku, aby byl stejne jako text vedle obrazku*/
+
+.text
+{
+    margin-left: 313px;
+}
+
+.text-ar
+{
+    margin-left: 305px;
+}
+
+.text-ar h2
+{
+    margin-left: 48px;
+}
+
+.text h2
+{
+    margin-left: 48px;
+}
+
+/* CARDS */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.card-text
+{
+    text-align: left;
+}
+.container h2
+{
+    margin-top: 40px;
+}
+
+.container img
+{
+    height: 190px;
+}
+
+
+
+
+/*Responzivita cards na mobilech*/
+@media (max-width: 768px)
+{
+    .card
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 85px;
+        margin-right: 85px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*Responzivita textu na mobilech*/
+
+@media (max-width: 768px)
+{
+    .text
+    {
+        margin-left: 0; /* Odsazení textu na mobilech nebude vubec*/
+    }
+    .text h2
+    {
+        margin-left: 0;
+    }
+    .text-ar
+    {
+        margin-left: 0;
+    }
+    .text-ar h2
+    {
+        margin-left: 0;
+    }
+    .pic-with-text
+    {
+        margin-left: 0;
+        margin-right:0;
+    }
+
+}
+
+/*Responzivita obrazku vedle textu na mobilech*/
+@media (max-width: 768px)
+{
+    img {
+        float: none;
+        /*max-width: 100%; Aby obrázek nebyl příliš velký na mobilu */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .text-box h2
+    {
+        clear: left; /* takhle bude nadpis pod obrazkem */
+        text-align: center;
+    }
+}
+
+
+
+/*Responzivita pozadí(obrázků) na mobily*/
+
+@media (max-width: 768px)
+{
+    .mainpage-pic {
+        min-height: 35vh;
+        background-size: cover; /* Upravení velikosti pozadí na mobilu */
+        background-repeat: no-repeat;
+    }
+    .vrpage-pic
+    {
+        min-height: 35vh;
+        background-size: cover; /* Upravení velikosti pozadí na mobilu */
+        background-repeat: no-repeat;
+    }
+    .arpage-pic
+    {
+        min-height: 25vh;
+        background-size: cover; /* Upravení velikosti pozadí na mobilu */
+        background-repeat: no-repeat;
+    }
+    .vyuzitipage-pic
+    {
+        min-height: 43vh;
+        background-size: cover; /* Upravení velikosti pozadí na mobilu */
+        background-repeat: no-repeat;
+    }
+
+}
+
+/* TISK */
+@media print
+{
+    img
+    {
+        display: none;
+    }
+    .text
+    {
+        margin: 0;
+    }
+    .text h2
+    {
+        margin: 0;
+    }
+    .text-ar
+    {
+        margin: 0;
+    }
+    .text-ar h2
+    {
+        margin: 0;
+    }
+    body
+    {
+        color: black;
+    }
+    .navbar
+    {
+        display: none;
+    }
+
+    /*Specialní - vypíše "Tato stránka není určena pro tisk"*/
+    .container::before
+    {
+
+        content: "Tato stránka není určena pro tisk";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        color: black;
+        text-align: center;
+        font-size: larger;
+    }
+}
+
+
+
+
