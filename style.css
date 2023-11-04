@@ -319,6 +319,10 @@ img
         font-size: larger;
     }
     */
+    .copyright
+    {
+        display: none;
+    }
 }
 
 
