@@ -305,10 +305,10 @@ img
     }
 
     /*Specialní - vypíše "Tato stránka není určena pro tisk"*/
-    .special-container::before
+    .container::before
     {
 
-        content: "Tato stránka není určena pro tisk";
+        content: "Tato stránka není určena pro tisk (týká se Využití a Příklady)";
         position: fixed;
         top: 0;
         left: 0;
